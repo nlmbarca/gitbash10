@@ -34,7 +34,7 @@ public class LoginTest extends CommonMethods {
         return data;
     }
 
-    @Test(dataProvider = "invalidData")
+    @Test(dataProvider = "invalidData",groups = "smoke")
     public void invalidLoginErrorMessageValidation(String username, String password, String message) {
         LoginPage loginPage=new LoginPage();
         loginPage.login(username, password);

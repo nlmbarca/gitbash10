@@ -6,8 +6,51 @@ What is framework?
     Benefits of framework:
         - it increases code reusability, readability, easy to maintain
 
-    Maven:
-        - it is a build automation tool
+    What is Maven:
+        - it is a build automation tool that helps us manage dependencies,
+        create project structure/hierarchy, and execute our test cases
+
+        -Maven can be used primarily for java applications, but we can also work in
+        other languages
+
+        How does maven manage the dependencies?
+            - Maven has a central repository where we have all the jar files
+            instead of adding them manually we can simply add them in our pom.xml and
+            maven takes care of it automatically
+
+    What is pom.xml?
+        - configuration file for our project
+        to contain all the dependencies we need from maven repository
+
+    What is testNG?
+        - testing automation framework
+
+        annotations:
+        1.@Test -> marks the method as test method
+        2.@Before -> preconditions (suite,test,method,class)
+        3.@After -> postconditons (suite,test,method,class)
+
+    what is our xml file?
+        - configuration file for testNG
+
+        <suite>
+          <test>
+             <classes>
+                <class name="">
+                   <methods>
+                      <include name=""/>
+                   </methods>
+                </class>
+             </classes>
+          </test>
+
+          <test>
+             <classes>
+             </classes>
+          </test>
+        </suite>
+
+Class 6 TestNgFramework
 
 User stories - 12345 - user should be able to login via valid credentials
 
@@ -21,8 +64,6 @@ US - 34342 - System should display error messages when invalid login is performe
 
 3. when user leaves username field empty then display "Username cannot be empty"
 
-
-
 Maven - build automation tool
 
 Testng - tool for testing
@@ -35,8 +76,16 @@ POM - design pattern
         we create separate java class for every page
 
 DataDrivenTesting(DDT) - testing the same functionality across multiple/different sets of data
-                        Using data provider and excel
+                        Using @DataProvider and excel
 
    .xls =HSSFWorkbook
    .xlsx (newer) = XSSFWorkbook
+
+Class 7 TestNgFramework
+
+Recap -
+
+volume of data - if it is big, data provider cannot handle this
+
+
 
