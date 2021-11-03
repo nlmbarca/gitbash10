@@ -1,4 +1,4 @@
-Batch10 notes.txt are all ready
+Batch10 notes.txt are not ready
 
 What is framework?
     - It gives us an organized folder structure to follow while writing the code.
